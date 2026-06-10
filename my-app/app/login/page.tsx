@@ -56,12 +56,12 @@ export default function LoginPage() {
 
       {/* Top logo */}
       <div className="flex items-center gap-1.5 mt-10 mb-10">
-        <Leaf className="w-9 h-7 text-[#2D6A4F]" />
-        <span className="text-sm font-semibold text-[#2D6A4F]">Mavuno</span>
+        <Leaf className="w-9 h-7 text-brand" />
+        <span className="text-sm font-semibold text-brand">Mavuno</span>
       </div>
 
       {/* Heading */}
-      <h1 className="text-4xl font-bold text-[#2D6A4F] mb-2">Mavuno</h1>
+      <h1 className="text-4xl font-bold text-brand mb-2">Mavuno</h1>
       <p className="text-gray-500 text-sm tracking-wide mb-8">
         Track your harvest. Grow your income.
       </p>
@@ -90,7 +90,7 @@ export default function LoginPage() {
         <div className="space-y-1.5">
           <div className="flex justify-between items-center">
             <Label htmlFor="password">Password</Label>
-            <span className="text-xs text-[#2D6A4F] font-medium cursor-pointer">
+            <span className="text-xs text-brand font-medium cursor-pointer">
               Forgot Password?
             </span>
           </div>
