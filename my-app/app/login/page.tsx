@@ -67,10 +67,10 @@ export default function LoginPage() {
       </p>
 
       {/* Card */}
-      <div className="w-full max-w-sm bg-white rounded-2xl shadow-sm p-6 space-y-5">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-sm p-8 flex flex-col justify-between min-h-[80vh]">
 
         {/* Email field */}
-        <div className="space-y-1.5">
+        <div className="space-y-1.9">
           <Label htmlFor="email">Email Address</Label>
           <div className="relative">
             <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -80,7 +80,7 @@ export default function LoginPage() {
               placeholder="johndoe@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="pl-9 bg-page-bg border-0"
+              className="pl-9 bg-page-bg border-0 h-12"
               required
             />
           </div>
@@ -102,7 +102,7 @@ export default function LoginPage() {
               placeholder=""
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="pl-9 pr-9 bg-page-bg border-0"
+              className="pl-9 pr-9 bg-page-bg border-0 h-12"
               required
             />
             <button
@@ -132,16 +132,9 @@ export default function LoginPage() {
           )}
         </Button>
 
-        {/* OR divider */}
-        <div className="flex items-center gap-3">
-          <div className="flex-1 h-px bg-gray-200" />
-          <span className="text-xs text-gray-400 font-medium">OR</span>
-          <div className="flex-1 h-px bg-gray-200" />
-        </div>
-
         {/* Register link */}
         <p className="text-center text-sm text-gray-500">
-          New to Mavuno?{" "}
+          Don't have an account?{" "}
           <Link href="/register" className="text-brand font-bold hover:underline">
             Register 
           </Link>
