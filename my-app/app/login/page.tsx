@@ -48,24 +48,21 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-page-bg px-4 py-10">
-
-      {/* Card fills most of the screen */}
+    <div className="min-h-screen flex flex-col items-center justify-center bg-page-bg px-6 py-12">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-sm p-8 flex flex-col justify-between min-h-[85vh]">
 
-        {/* TOP — logo + heading */}
-        <div className="flex flex-col items-center gap-1">
-          <div className="flex items-center gap-1.5 mb-3">
-            <Leaf className="w-4 h-4 text-brand" />
-            <span className="text-sm font-semibold text-brand">Mavuno</span>
-          </div>
+        {/* spacer — pushes logo to center */}
+        <div />
+
+        {/* logo + heading — centered */}
+        <div className="flex flex-col items-center gap-2">
           <h1 className="text-4xl font-extrabold text-brand">Mavuno</h1>
           <p className="text-gray-400 text-sm tracking-wide">
             Track your harvest. Grow your income.
           </p>
         </div>
 
-        {/* MIDDLE — form fields */}
+        {/* form fields */}
         <div className="flex flex-col gap-6">
 
           {/* Email */}
@@ -128,19 +125,20 @@ export default function LoginPage() {
             )}
           </Button>
 
-          {/* OR divider */}
-          <div className="flex items-center gap-3">
-            <div className="flex-1 h-px bg-gray-200" />
-            <span className="text-xs text-gray-400 font-medium">OR</span>
-            <div className="flex-1 h-px bg-gray-200" />
-          </div>
         </div>
 
-        {/* BOTTOM — register link */}
+        {/* OR divider */}
+        <div className="flex items-center gap-4">
+          <div className="flex-1 h-px bg-gray-200" />
+          <span className="text-xs text-gray-400 font-medium">OR</span>
+          <div className="flex-1 h-px bg-gray-200" />
+        </div>
+
+        {/* register link */}
         <p className="text-center text-sm text-gray-500">
           New to Mavuno?{" "}
           <Link href="/register" className="text-brand font-bold hover:underline">
-            Register your farm
+            Create an account
           </Link>
         </p>
       </div>
